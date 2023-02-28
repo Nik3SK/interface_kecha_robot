@@ -5,6 +5,7 @@ import "./stylish.css"
 
 const app = ReactDomClient.createRoot(document.getElementById('app'));
 app.render(
+
     <App />
 );
 
