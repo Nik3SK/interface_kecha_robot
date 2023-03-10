@@ -1,0 +1,60 @@
+#link1{
+    position: absolute;
+    left:100px;
+    top:860px;
+    font-size: 80px;
+
+
+}
+#link2{
+    position: absolute;
+    left:400px;
+    top:1280px;
+    font-size: 80px;
+}
+#link3{
+    position: absolute;
+    left:200px;
+    top:1670px;
+    font-size: 80px;
+}
+.st0{
+     fill:#FFFFFF;
+     stroke:#8A7D81;
+     stroke-width:7;
+     stroke-miterlimit:10;
+ }
+.st1{
+      fill:#8A7D81;
+      stroke:#544842;
+      stroke-width:3;
+      stroke-miterlimit:10;
+  }
+   .st2{
+       fill:none;
+       stroke:#8A7D81;
+       stroke-width:7;
+       stroke-miterlimit:10;
+   }
+   .st3{
+       fill:#8A7D81;
+   }
+   .st4{
+       fill:#F5BC07;
+       stroke:#8A7D81;
+       stroke-width:7;
+       stroke-miterlimit:10;
+   }
+   .face{
+       position: absolute;
+       width: 800px;
+       height: 600px;
+       top: 100px;
+       left:170px;
+   }
+  .fon{
+      fill-opacity: 0.5;
+      width: 1070px;
+      height: 1900px;
+      background-color: #edce71;
+  }
