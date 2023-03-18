@@ -1,0 +1,32 @@
+#firstword{
+    font-size: 100px;
+    width: 1080px;
+    height: 200px;
+}
+
+.board{
+
+    width: 1080px;
+    height: 1920px;
+    background-color: #edce71;
+    position: absolute;
+    top: 0px;
+}
+.board-row {
+    clear: both;
+    content: "";
+    display: table;
+    width: 650px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.tile {
+    width: 200px;
+    margin-top: 200px;
+    height: 200px;
+    border: 5px solid #bbada0;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 2px;
+}

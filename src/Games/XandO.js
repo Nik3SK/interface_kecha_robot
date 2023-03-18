@@ -1,5 +1,5 @@
 import React from "react";
-import "./design2048.css"
+import "./designXandO.css"
 
 function Square(props) {
         return (
@@ -8,7 +8,7 @@ function Square(props) {
             </button>
         );
 }
-class Component2 extends React.Component{
+class XandO extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -76,4 +76,4 @@ function calculateWinner(valiesofsqur) {
     }
     return null;
 }
-export default Component2
+export default XandO

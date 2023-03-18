@@ -1,0 +1,18 @@
+#landforinf1{
+    position: absolute;
+    top: 600px;
+    width: 600px;
+    height: 300px;
+    rotate: 15deg;
+}
+.el1{
+    fill:#F5BC07;
+}
+#strl1{
+    position: absolute;
+    width: 100px;
+    rotate: 20deg;
+    top: 100px;
+    left: 60px;
+    font-size: 50px;
+}

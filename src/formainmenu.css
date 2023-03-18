@@ -3,7 +3,7 @@
     left:100px;
     top:860px;
     font-size: 80px;
-
+    text-decoration: none;
 
 }
 #link2{
@@ -11,12 +11,14 @@
     left:400px;
     top:1280px;
     font-size: 80px;
+    text-decoration: none;
 }
 #link3{
     position: absolute;
     left:200px;
     top:1670px;
     font-size: 80px;
+    text-decoration: none;
 }
 .st0{
      fill:#FFFFFF;
