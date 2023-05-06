@@ -1,0 +1,46 @@
+#but3dloc{
+    position: absolute;
+    top: 300px;
+    width: 1000px;
+    height: 1500px;
+}
+
+#st0forbut3d{
+
+    fill:#F8F8F6;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+
+}
+#st4forbut3d{
+    fill:#78ADCE;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+}
+
+#st21forbut3d{
+    fill:#96BCD6;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+}
+#st27forbut3d{
+    fill:#E1E8EE;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+}
+#st28forbut3d{
+    fill:#CAD9E6;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+}
+#st29forbut3d{
+    fill:#B1CADE;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(2.0);
+}

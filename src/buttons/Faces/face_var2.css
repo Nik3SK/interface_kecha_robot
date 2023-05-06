@@ -1,0 +1,27 @@
+.face_var2loc{
+    position: absolute;
+    top: 50px;
+}
+#grad1loc{
+    top: 0px;
+    position: absolute;
+}
+
+.desclas1{
+    fill:#f1f9fe;
+    stroke:#3070b6;
+    stroke-miterlimit:10;
+    stroke-width:3px;
+}
+.desclas2{
+    fill:#2c3370;
+}
+.desclas3{
+    fill:#f8cad5;
+}
+.desclas4{
+    fill:#c76e9a;
+}
+.desclas5{
+    fill:#fff;
+}

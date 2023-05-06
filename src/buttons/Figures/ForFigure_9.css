@@ -1,0 +1,11 @@
+#plyam2 {
+    fill: #AA90C4;
+}
+#plyam2loc{
+    position: absolute;
+    top: 1050px;
+    width: 550px;
+    height: 150px;
+    rotate: 90deg;
+    right: 600px;
+}

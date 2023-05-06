@@ -1,0 +1,154 @@
+#Mainmenufon{
+    position: absolute;
+    top: 0px;
+    width: 1080px;
+    height: 1920px;
+    background-color: white;
+}
+#link1mainmenu{
+    position: absolute;
+    left:100px;
+    top:1295px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link2mainmenu{
+    position: absolute;
+    left:430px;
+    top:1320px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link3mainmenu{
+    position: absolute;
+    left:755px;
+    top:1295px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: #96BCD6;
+}
+#link4mainmenu{
+    position: absolute;
+    left:230px;
+    top:1480px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: #96BCD6;
+}
+#link5mainmenu{
+    position: absolute;
+    left:620px;
+    top:1485px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link6mainmenu{
+    position: absolute;
+    left:65px;
+    top:1645px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link7mainmenu{
+    position: absolute;
+    left:765px;
+    top:1645px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link8mainmenu{
+    position: absolute;
+    left:225px;
+    top:1795px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+}
+#link9mainmenu{
+    position: absolute;
+    left:655px;
+    top:1795px;
+    font-size: 35px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color:#96BCD6;
+}
+#text1Mainmenu{
+    position: absolute;
+    top: 670px;
+    right:750px;
+}
+#text2Mainmenu{
+     position: absolute;
+     top: 600px;
+     right:150px;
+    width: 600px;
+    height: 300px;
+ }
+#text3Mainmenu{
+    position: absolute;
+    top: 970px;
+    right: 130px;
+    width: 500px;
+    height: 250px;
+}
+#text4Mainmenu{
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    top: 1250px;
+    right: 40px;
+}
+#text5Mainmenu{
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    top: 1430px;
+    right: 40px;
+}
+#text6Mainmenu{
+    position: absolute;
+    top: 1590px;
+    width: 1000px;
+    height: 150px;
+    right: 40px;
+}
+#text7Mainmenu{
+    position: absolute;
+    top: 1740px;
+    width: 1000px;
+    height: 150px;
+    right: 40px;
+}
+

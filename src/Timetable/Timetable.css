@@ -1,0 +1,95 @@
+#fonfortimetable{
+    position: absolute;
+    top: 0px;
+    width: 1080px;
+    height: 1920px;
+    right: 0px;
+    background-color: white;
+}
+#inf1{
+    position: absolute;
+    top: 1000px;
+    font-size: 60px;
+}
+#inf2{
+    position: absolute;
+    top: 100px;
+    font-size: 60px;
+}
+#text1Timetable{
+    position: absolute;
+    width: 450px;
+    top: 550px;
+    right:430px;
+    height: 250px;
+}
+#text2Timetable{
+    position: absolute;
+    width: 550px;
+    top: 630px;
+    right:450px;
+    height: 350px;
+}
+#text3Timetable{
+    position: absolute;
+    width: 270px;
+    top: 630px;
+    right:120px;
+    height: 150px;
+}
+#formforinput{
+    position: relative;
+    top: 630px;
+    right: -600px;
+    width: 300px;
+    height: 300px;
+}
+#inputtimetable{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+    border: solid;
+    border-color: #B1CADE;
+    border-width: 10px;
+    border-radius: 20px;
+}
+#autocomplete{
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    font-size: 34px;
+    background: white;
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+    max-height: 200px;
+    height: auto;
+    overflow: auto;
+}
+.forpathofautocompl{
+    padding: 10px;
+}
+.forpathofautocompl:hover{
+    background: darkgrey;
+}
+#inputtimetable::placeholder{
+    font-size: 34px;
+    color: #AA90C4;
+    font-family: "PT Sans";
+    font-weight: bold;
+}
+#lessons{
+    position: absolute;
+    width: 850px;
+    height: 900px;
+    left: 100px;
+}
+#depictweather{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 770px;
+    left: 360px;
+}

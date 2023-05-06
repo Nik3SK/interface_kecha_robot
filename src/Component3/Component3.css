@@ -1,0 +1,21 @@
+#fonforcompon3{
+    position: absolute;
+    top: 0px;
+    width: 1080px;
+    height: 1920px;
+    background-color: #B1CADE;
+    right: 0px;
+}
+#link1compon3{
+    position: absolute;
+    top: 0px;
+    font-size: 100px;
+    right: 300px;
+    font-family: "PT Sans";
+}
+#link2compon3{
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    font-size: 100px;
+}

@@ -1,0 +1,11 @@
+#plyamweather {
+    fill: #AA90C4;
+}
+#plyamweatherloc{
+    position: absolute;
+    top: 1300px;
+    width: 350px;
+    height: 150px;
+    left: 900px;
+    rotate: 260deg;
+}

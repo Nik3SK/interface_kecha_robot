@@ -1,0 +1,41 @@
+.face{
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    top: 100px;
+    left:170px;
+}
+.st0{
+    fill:#FFFFFF;
+    stroke:#8A7D81;
+    stroke-width:7;
+    stroke-miterlimit:10;
+}
+.st1{
+    fill:#8A7D81;
+    stroke:#544842;
+    stroke-width:3;
+    stroke-miterlimit:10;
+}
+.st2{
+    fill:none;
+    stroke:#8A7D81;
+    stroke-width:7;
+    stroke-miterlimit:10;
+}
+.st3{
+    fill:#8A7D81;
+}
+.st4{
+    fill:#F5BC07;
+    stroke:#8A7D81;
+    stroke-width:7;
+    stroke-miterlimit:10;
+}
+#grad1{
+    stop-color:#EBC200;
+}
+#grad12{
+    stop-color:#F5F5F5;
+    stop-opacity:0;
+}

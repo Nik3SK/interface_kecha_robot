@@ -1,0 +1,51 @@
+#fonforcomponent2{
+    position: absolute;
+    background-color: white;
+    width: 1080px;
+    height: 1920px;
+    top: 0px;
+    right: 0px;
+}
+#facecomponent2{
+    position: absolute;
+    top: 700px;
+}
+#bluecircleloc1{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+
+}
+#bluecircleloc2{
+    position: absolute;
+    top: 450px;
+    left: 575px;
+}
+#grad1component2loc{
+    position: absolute;
+    top: 1200px;
+}
+#bluecircleloc3{
+    position: absolute;
+    top:750px;
+    left: 750px;
+}
+#text1component2{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: 500px;
+    height: 300px;
+}
+#logoforcomponent2{
+    position: absolute;
+    top:530px;
+    left: 350px;
+}
+#text2component2{
+    position: absolute;
+    top: 480px;
+    left: 590px;
+    width: 300px;
+    height: 300px;
+}
