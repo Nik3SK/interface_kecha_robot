@@ -1,0 +1,101 @@
+#fonforPushkin{
+    position: absolute;
+    top: 0px;
+    width: 1080px;
+    height: 1920px;
+    right: 0px;
+    background-color: #96BCD6;
+}
+#imagePysh{
+    position: absolute;
+    right: 500px;
+    top: 400px;
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+#Pyshkintext1{
+    position: absolute;
+    top: 670px;
+    left: 180px;
+    width: 800px;
+    height: 300px;
+}
+#imageRL{
+    position: absolute;
+    right: 780px;
+    top: 950px;
+    width: 230px;
+    height: 260px;
+    border-radius: 50px;
+
+}
+#Pyshkintext2{
+     position: absolute;
+     top: 980px;
+     left: 280px;
+     width: 300px;
+     height: 250px;
+ }
+#imageFF{
+    position: absolute;
+    right: 520px;
+    top: 1300px;
+    width: 304px;
+    height: 260px;
+    border-radius: 50px;
+}
+#Pyshkintext3{
+     position: absolute;
+     top: 1300px;
+     left: 500px;
+     width: 300px;
+     height: 250px;
+ }
+#imageTS{
+    position: absolute;
+    right: 380px;
+    top: 1600px;
+    width: 230px;
+    height: 270px;
+    border-radius: 50px;
+}
+#Pyshkintext4{
+    position: absolute;
+    top: 1630px;
+    left: 650px;
+    width: 300px;
+    height: 250px;
+}
+#imageSWAN{
+    position: absolute;
+    right: 200px;
+    top: 370px;
+    width: 230px;
+    height: 270px;
+    border-radius: 50px;
+}
+#imageLukMore{
+    position: absolute;
+    right: 30px;
+    top: 1000px;
+    width: 402px;
+    height: 292px;
+    border-radius: 50px;
+}
+#imagefrog{
+    position: absolute;
+    right: 850px;
+    top: 1300px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+#imagefish{
+    position: absolute;
+    right: 100px;
+    top: 1480px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
