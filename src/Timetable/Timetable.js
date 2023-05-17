@@ -1,7 +1,7 @@
 import React from "react";
 import "./Timetable.css";
 // import axios from "axios";
-import {useState, } from "react";
+import {useState,useRef } from "react";
 import Face_var2 from "../buttons/Faces/face_var2";
 import Gradient2 from "../buttons/Gradientscircle/Gradient2yellow";
 import Logovar2 from "../buttons/Logos/Logovar2";
@@ -11,6 +11,10 @@ import Land6 from "../buttons/Land6/Land6";
 import Land3Dtype3 from "../buttons/sliceboxes/Sliceboxlong";
 import Gradient3 from "../buttons/Gradientscircle/Gradient3blue";
 import Gradient1 from "../buttons/Gradientscircle/Gradient1violet";
+
+import Keyboard from 'react-simple-keyboard';
+import 'react-simple-keyboard/build/css/index.css';
+import {keyboard} from "@testing-library/user-event/dist/keyboard";
 // import {json} from "react-router";
 
 function Timetable() {
@@ -18,7 +22,14 @@ function Timetable() {
     const [FioforTime, setFioforTime] = useState('')
     const [TimeTable,setTimeTable] = useState(['Время','Время','Пара','Время','Время','Пара','Время','Время','Пара']);
     const [Names, setNames] = useState([])
+    const [KeyboardOpen, setKeyboardOpne] =useState(false)
+    const [Inputs, setInputs] = useState("")
+    const [Layout, setLayout] = useState("default");
+    const keyboard = useRef();
     function Getfio(e) {
+        setInputs(e.target.value)
+        const input =e.target.value;
+        keyboard.current.setInput(input)
         e.preventDefault();
         setFio(e.target.value)
         const ws = new WebSocket('ws://localhost:8000');
@@ -62,8 +73,21 @@ function Timetable() {
 
         };
     }
-
-
+    function  calltokeyboard() {
+        setKeyboardOpne(true)
+    }
+    const onChange = input => {
+        setInputs(input);
+        console.log("Input changed", input);
+    };
+    const handleShift = () => {
+        const newLayoutName = Layout === "default" ? "shift" : "default";
+        setLayout(newLayoutName);
+    };
+    const onKeyPress = button => {
+        console.log("Button pressed", button);
+        if (button === "{lock}") handleShift();
+    };
     return (
         <>
             <svg id="fonfortimetable"></svg>
@@ -72,10 +96,13 @@ function Timetable() {
             <Gradient1 transform="translate(-230 1200)"/>
             <Face_var2 transform="translate(-150 50)"/>
             <Logovar2/>
-            <Land2 fill="#EBC200" transform="translate(-20 70)"/>
-            <Land4  fill="#A592C5" transform="translate(-350 -500)"/>
-            <form id="formforinput">
-                <input id="inputtimetable" placeholder="напиши тут свое имя! "  onChange={Getfio}/>
+            <Land2 fill="#EBC200" transform="translate(-20 -70)"/>
+            <Land4  fill="#A592C5" transform="translate(-250 -500)"/>
+            <form id="formforinput" >
+
+                <input id="inputtimetable" placeholder="напиши тут свое имя! "  onChange={Getfio} onClick={calltokeyboard}
+                value={Inputs}
+                />
                 <ul id="autocomplete">
                     {
                         Fio
@@ -96,7 +123,7 @@ function Timetable() {
             <svg id="text2Timetable">
                 <text x="230" y="235" fontSize="63" fontFamily="PT Sans" fontWeight="bold" fill="white">{TimeTable[10]}</text>
                 <text x="80" y="285" fontSize="43" fontFamily="PT Sans" fontWeight="bold" fill="white">{TimeTable[9]}</text>
-                <text x="40" y="135" fontSize="103" fontFamily="PT Sans" fontWeight="bold" fill="white">ッ</text>
+                <text x="-20" y="135" fontSize="103" fontFamily="PT Sans" fontWeight="bold" fill="white">ッ</text>
                 <text x="40" y="225" fontSize="53" fontFamily="PT Sans" fontWeight="bold" fill="white">Погода:</text>
             </svg>
             <img id="depictweather" src = {(`https://openweathermap.org/img/w/`+TimeTable[11]+`.png`).replace(/\s+/g, '')} title="weather" alt="no" />
@@ -123,10 +150,42 @@ function Timetable() {
 
                     <text x="350" y="800" fontSize="73" fontFamily="PT Sans" fontWeight="bold" fill="white">ヽ(*⌒▽⌒*)ﾉ</text>
                 </svg>
-            </div>
 
+            </div>
+         <div id="forKeyboard">
+             {KeyboardOpen===true ? <Keyboard
+                 keyboardRef={r => (keyboard.current = r)}
+                 onChange={onChange}
+                 onKeyPress={onKeyPress}
+                 layoutName ={Layout}
+                 layout={{
+                     default: [
+                         "` 1 2 3 4 5 6 7 8 9 0 - =",
+                         "й ц у к е н г ш щ з х ъ \\",
+                         "ф ы в а п р о л д ж э ; ' {enter}",
+                         "{shift} я ч с м и т ь б ю {shift}",
+                         "{space} {bksp} {lock}"
+                     ],
+                     shift: [
+                         "` 1 2 3 4 5 6 7 8 9 0 - =",
+                         "Й Ц У К Е Н Г Ш Щ З Х Ъ \\",
+                         "Ф Ы В А А П О Л Д Ж Э ; ' {enter}",
+                         "{shift} Я Ч С М И Т Ь Б Ю {shift}",
+                         "{space} {bksp} {lock}"
+                     ]
+                 }}
+                 display={{
+                     "{space}": "Пробел",
+                     "{bksp}": "Удалить символ",
+                     "{enter}": "Enter",
+                     "{shift}":"Shift",
+                     "{lock}": "Смена Регистра"
+                 }}
+             />: null}
+         </div>
         </>
     );
+
 }
 
 export default Timetable
