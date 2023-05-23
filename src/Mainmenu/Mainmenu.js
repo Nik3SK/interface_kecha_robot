@@ -24,6 +24,16 @@ import TicTacToe from "../TicTacToe/TicTacToe";
 import Gradient2yellow from "../buttons/Gradientscircle/Gradient2yellow";
 import Hello from "../Hello/Hello";
 
+import phshcedule1 from "./ImagesForMainmenu/schedule-var1.png"
+import CMshcedule2 from './ImagesForMainmenu/cardmemory-var1.png'
+import Good from "./ImagesForMainmenu/goodmood.png"
+import iconforFB from "./ImagesForMainmenu/iconforFB.png"
+import iconforPyshkin from "./ImagesForMainmenu/iconforPyshkin.png"
+import phtictacvar1 from "./ImagesForMainmenu/icontictacvar1.png"
+import phtictacvar2 from "./ImagesForMainmenu/icontictacvar2.png"
+import phtictacvar3 from "./ImagesForMainmenu/icontictacvar3.png"
+import phtictacvar4 from "./ImagesForMainmenu/icontictacvar4.png"
+
 class Mainmenu extends React.Component {
     constructor(props) {
         super(props)
@@ -43,20 +53,28 @@ class Mainmenu extends React.Component {
                 <Gradient1violet transform="translate(200 700)"/>
                 <Gradient2yellow transform="translate(0-150)"/>
                 <Face_var2/>
-
                 <Logovar2/>
-                <Land2 fill="#f1f9fe" transform="translate(-100 -100)"/>
-                <Land1 fill="#A592C5" transform="translate(-10 0)"/>
-                <Land1 fill="#96BCD6" transform="translate(350 30)"/>
-                <Land1 fill="#f1f9fe" transform="translate(700 0)"/>
-                <Land1 fill="#A592C5" transform="translate(550 190)"/>
-                <Land1 fill="#f1f9fe" transform="translate(150 190)"/>
-                <Land1 fill="#96BCD6" transform="translate(0 350)"/>
-                <Land1 fill="#96BCD6" transform="translate(700 350)"/>
-                <Land1 fill="#f1f9fe" transform="translate(550 500)"/>
-                <Land1 fill="#A592C5" transform="translate(170 500)"/>
+                <Land2 fill="#f1f9fe" transform="translate(-100 -170)"/>
+
+
+                <ul id="plastinsmenu">
+                    <li id="plastin1"></li>
+                    <li id="plastin2"></li>
+                    <li id="plastin3">СКОЛЬКО МОСКВА</li>
+                    <li id="plastin4"></li>
+                    <li id="plastin5"></li>
+                    <li id="plastin6"></li>
+                    <li id="plastin7"></li>
+                    <li id="plastin8">ВЫШКА</li>
+                </ul>
+                <img src={phshcedule1} id="phfromainmenu" />
+                <img src={CMshcedule2} id="cmfrommainmenu"/>
+                <img src={Good} id="goodformainmenu"/>
+                <img src={iconforFB} id="foriconforFB"/>
+                <img src={iconforPyshkin} id="foriconforPyshkin"/>
+                <img src={phtictacvar1} id="foricontictac"/>
                 <Land3 fill="#A592C5" transform="translate(10 -20)"/>
-                <Land4 fill="#EBC200" transform="translate(10 -60)"/>
+                <Land4 fill="#EBC200" transform="translate(70 -180)"/>
                 <svg id="text1Mainmenu"><text x="50" y="90" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="white">(＾▽＾)</text></svg>
                 <svg id="text2Mainmenu"><text x="50" y="110" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">Привет, </text>
                     <text x="350" y="70" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">(*^‿^*)</text>
@@ -64,26 +82,25 @@ class Mainmenu extends React.Component {
                 </svg>
                 <svg id="text3Mainmenu"><text x="55" y="90" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="white">Подсказать</text>
                     <text x="70" y="170" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="white">что-нибудь?</text>
+                    <text x="410" y="160" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="white">ツ</text>
                 </svg>
 
                 <div onClick={this.clickforwake} id="forhello">
                     <Link id="link1mainmenu" to='/Whoareyou' >Кто я такой?</Link>
 
-                    <Link id="link2mainmenu"  to='/HSE'>Хочешь в Вышкy?</Link>
+                    {/*<Link id="link2mainmenu"  to='/HSE'>Хочешь в Вышкy?</Link>*/}
 
-                    <Link id="link3mainmenu" to='/timetable' >Показать расписание?</Link>
+                    <Link id="link3mainmenu" to='/timetable' >Показать расписание</Link>
 
                     <Link id="link4mainmenu" to='/Pushkin' >Кто такой Пушкин?</Link>
 
-                    <Link id="link5mainmenu" to='/moscow' >Сколько лет Москве?</Link>
+                    {/*<Link id="link5mainmenu" to='/moscow' >Сколько лет Москве?</Link>*/}
 
-                    <Link id="link6mainmenu" to='/registration' >Пройти регистрацию?</Link>
+                    <Link id="link7mainmenu" to='/gameMemory' >Сыграем в <br/>"Найди пару"</Link>
 
-                    <Link id="link7mainmenu" to='/gameMemory' >Сыграем в "Найди пару"?</Link>
+                    <Link id="link8mainmenu" to='/gameFB' >Сыграем <br/> в Flappybird?</Link>
 
-                    <Link id="link8mainmenu" to='/gameFB' >Сыграем в Flappybird?</Link>
-
-                    <Link id="link9mainmenu" to='/gameXO' >Сыграем в X и O?</Link>
+                    <Link id="link9mainmenu" to='/gameXO' >Давай <br/> в</Link>
                 {this.state.Onetouch==="Sleep" ? <Hello/>: null}</div>
                     <Routes>
                         <Route path='/Whoareyou' element={<Component2/>}/>

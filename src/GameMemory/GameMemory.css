@@ -79,3 +79,40 @@ h1 {
     position: absolute;
     right: 0;
 }
+#GameMemoryboardpos{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+#NameOfGameMemory{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 550px;
+    font-size: 80px;
+    font-family: "PT Sans";
+    color: #fffffe;
+    font-weight: bold;
+}
+#photoforGM1{
+    width: 15%;
+    position: absolute;
+    left: 70%;
+    top: 28%;
+}
+#text1GameMemory{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 450px;
+    left: 100px;
+}

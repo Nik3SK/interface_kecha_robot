@@ -8,9 +8,11 @@ import photorains from "./imagesforGM/rain.png"
 import photorainbows from "./imagesforGM/rainbow.png"
 import photosnows from "./imagesforGM/snow.png"
 import photosuns from "./imagesforGM/sun.png"
+import GameMemory from "./GameMemory";
+import Winblock from "./Winblock";
 
 
-
+var WIN = 0;
 function Cards(){
     const [items, setItems] = useState([
         {id: 1, img:photoclouds, stat: ""},
@@ -37,10 +39,12 @@ function Cards(){
         if(items[current].id == items[prev].id){
             items[current].stat = "correct"
             items[prev].stat = "correct"
+            WIN += 1;
+            console.log(WIN)
             setItems([...items])
             setPrev(-1)
         }
-        else{
+        else if (WIN != 8){
             items[current].stat = "wrong"
             items[prev].stat = "wrong"
             setItems([...items])
@@ -69,7 +73,9 @@ function Cards(){
                 <Card key={index} item={item} id={index} handleClick={handleClick}/>
             ))
             }
+            { WIN === 8?<Winblock/> : null}
         </div>
+
     )
 }
 

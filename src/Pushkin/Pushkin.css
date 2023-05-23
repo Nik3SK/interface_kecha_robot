@@ -1,15 +1,14 @@
 #fonforPushkin{
     position: absolute;
-    top: 0px;
-    width: 1080px;
-    height: 1920px;
-    right: 0px;
+    width: 100%;
+    height: 100%;
+    right: 0%;
     background-color: #96BCD6;
 }
 #imagePysh{
     position: absolute;
-    right: 500px;
-    top: 400px;
+    right: 50%;
+    top: 21%;
     width: 400px;
     height: 300px;
     border-radius: 50px;

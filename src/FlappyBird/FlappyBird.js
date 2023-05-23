@@ -4,14 +4,15 @@ import "./FlappyBird.css"
 import Photo1forFB from './images/flappy_bird_bg.png';
 import Photo2forFB from './images/flappy_bird_pipe.png';
 import Photo3forFB from './images/flappy_bird_bird.png'
-const BIRD_HEIGHT = 28;
-const BIRD_WIDTH = 33;
+const BIRD_HEIGHT = 89;
+const BIRD_WIDTH = 105;
 const WALL_HEIGHT = 1920;
 const WALL_WIDTH = 1080;
-const GRAVITY = 6;
-const OBJ_WIDTH = 52;
-const OBJ_SPEED = 3;
-const OBJ_GAP = 200;
+const GRAVITY = 18;
+const OBJ_WIDTH = 150;
+const OBJ_SPEED = 15;
+const OBJ_GAP = 600;
+
 function FlappyBird() {
     const [isStart, setIsStart] = useState(false);
     const [birdpos, setBirspos] = useState(300);
@@ -71,7 +72,7 @@ function FlappyBird() {
         <>
 
         <Home onClick={handler}>
-            <span>Score: {score}</span>
+            <span id="scores">Score: {score}</span>
             <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
                 {!isStart ? <Startboard>Click To Start</Startboard> : null}
                 <Obj
@@ -95,6 +96,7 @@ function FlappyBird() {
                     deg={0}
                 />
             </Background>
+            <span id="scores">Score: {score}</span>
         </Home>
         </>
     );
@@ -104,6 +106,7 @@ export default FlappyBird;
 
 const Home = styled.div`
   position: absolute;
+  top: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -115,7 +118,9 @@ const Background = styled.div`
   background-size: ${(props) => props.width}px ${(props) => props.height}px;
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   overflow: hidden;
   border: 2px solid black;
 `;

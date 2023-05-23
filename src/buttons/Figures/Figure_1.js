@@ -3,7 +3,7 @@ import "./ForFigure_1.css";
 class Buttonmain1 extends React.Component {
     render() {
 
-        const viewBox2 =[0, 0, 666.14, 345.83]
+        const viewBox2 =[0, 0, 1500, 2400]
         return(
             <>
                 <svg className="Buttonmain1loc" viewBox={viewBox2} width="1000"

@@ -8,6 +8,5 @@ app.render(
 <BrowserRouter>
     <Mainmenu/>
 </BrowserRouter>
-
 );
 

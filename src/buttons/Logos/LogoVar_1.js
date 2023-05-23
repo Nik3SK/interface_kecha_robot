@@ -2,7 +2,7 @@ import React from "react";
 import "./ForLogoVar_1.css";
 class Logo extends React.Component {
     render() {
-        const viewBox2 =[0, 0, 250, 250]
+        const viewBox2 =[0, 0, 1000, 1900]
         return(
             <>
                 <svg id="logoloc" width="1000" height="1900"  viewBox={viewBox2} >

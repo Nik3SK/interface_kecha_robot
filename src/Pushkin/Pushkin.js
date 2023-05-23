@@ -21,32 +21,33 @@ class Pushkin extends React.Component{
         return(
             <>
                 <svg id="fonforPushkin">
-                <Figure_7 fill="white" transform='translate(100 200)' />
-                <Figure_6 fill="#EBC200" transform='translate(-340 200)'/>
-                <Figure_6 fill="#EBC200" transform='translate(-120 550)'/>
-                <Figure_6 fill="#EBC200" transform='translate(70 900)'/>
-                <Logo fill="green" transform='translate(40 1700)'/>
-                <Figure_1 fill="#f1f9fe" transform='translate(50 -180)'/>
-                <Figure_1 fill="#f1f9fe" transform='translate(770 -90)'/>
-                <Gradient2yellow transform='translate(450 -230)' />
+                    <Figure_7 fill="white" transform='translate(100 200)'/>
+                    <Figure_6 fill="#EBC200" transform='translate(-340 200)'/>
+                    <Figure_6 fill="#EBC200" transform='translate(-120 550)'/>
+                    <Figure_6 fill="#EBC200" transform='translate(70 900)'/>
+                    <Logo fill="green" transform='translate(40 1700)'/>
+                    <Figure_1 fill="#f1f9fe" transform='translate(50 -180)'/>
+                    <Figure_1 fill="white" transform='translate(770 -90)'/>
+                    <Gradient2yellow transform='translate(450 -230)'/>
                 </svg>
                 <svg id="Pyshkintext1">
                     <text x="100" y="70" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
                         Александр Сергеевич Пушкин - писатель,
                     </text>
                     <text x="50" y="120" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
-                        который стал величашим национальным русским
+                        который стал величайшим национальным русским
                     </text>
                     <text x="50" y="170" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
                         поэтом. Пушкин написал 783 стихотворения,
                     </text>
-                    <text x="70" y="220" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
+                    <text x="50" y="220" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
                         но конечно все с детства
                     </text>
                     <text x="180" y="270" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
-                        помнят сказки..!
+                        помнят сказки
                     </text>
                 </svg>
+
                 <img src={photo1} alt='no' id="imagePysh" />
                 <img src={photo2} alt='no' id="imageRL"/>
                 <img src={photo3} alt='no' id="imageFF"/>

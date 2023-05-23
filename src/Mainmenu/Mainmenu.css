@@ -7,9 +7,9 @@
 }
 #link1mainmenu{
     position: absolute;
-    left:100px;
-    top:1295px;
-    font-size: 35px;
+    left:80px;
+    top:1150px;
+    font-size: 60px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
@@ -18,7 +18,7 @@
 }
 #link2mainmenu{
     position: absolute;
-    left:430px;
+    left:730px;
     top:1320px;
     font-size: 35px;
     text-decoration:none;
@@ -29,20 +29,20 @@
 }
 #link3mainmenu{
     position: absolute;
-    left:755px;
-    top:1295px;
-    font-size: 35px;
+    left:405px;
+    top:1455px;
+    font-size: 60px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
     font-weight: bold;
-    color: #96BCD6;
+    color: white;
 }
 #link4mainmenu{
     position: absolute;
-    left:230px;
-    top:1480px;
-    font-size: 35px;
+    left:720px;
+    top:1140px;
+    font-size: 58px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
@@ -51,7 +51,7 @@
 }
 #link5mainmenu{
     position: absolute;
-    left:620px;
+    left:720px;
     top:1485px;
     font-size: 35px;
     text-decoration:none;
@@ -73,36 +73,36 @@
 }
 #link7mainmenu{
     position: absolute;
-    left:765px;
-    top:1645px;
-    font-size: 35px;
+    left:725px;
+    top:1585px;
+    font-size: 60px;
     text-decoration:none;
-    width: 300px;
+    width: 350px;
     font-family: "PT Sans";
     font-weight: bold;
     color: white;
 }
 #link8mainmenu{
     position: absolute;
-    left:225px;
-    top:1795px;
-    font-size: 35px;
+    left:60px;
+    top:1415px;
+    font-size: 60px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
     font-weight: bold;
-    color: white;
+    color: #96BCD6;
 }
 #link9mainmenu{
     position: absolute;
-    left:655px;
-    top:1795px;
-    font-size: 35px;
+    left:464px;
+    top:1690px;
+    font-size: 58px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
     font-weight: bold;
-    color:#96BCD6;
+    color:white;
 }
 #text1Mainmenu{
     position: absolute;
@@ -111,14 +111,14 @@
 }
 #text2Mainmenu{
      position: absolute;
-     top: 600px;
+     top: 540px;
      right:150px;
     width: 600px;
     height: 300px;
  }
 #text3Mainmenu{
     position: absolute;
-    top: 970px;
+    top: 850px;
     right: 130px;
     width: 500px;
     height: 250px;
@@ -151,4 +151,141 @@
     height: 150px;
     right: 40px;
 }
+#forhello{
+    position: absolute;
+    width: 1080px;
+    height: 1920px;
+    top: 0px;
+}
 
+
+#plastinsmenu{
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 55%;
+    margin: 5%;
+    columns: 3 auto;
+}
+#plastin1{
+    background-color: #96BCD6;
+    list-style: none;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin2{
+    background-color:#f1f9fe;
+    list-style: none;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin3{
+    background-color: #EBC200;
+    list-style: none;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin4{
+    background-color: #A592C5;
+    list-style: none;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#plastin5{
+    background-color: #96BCD6;
+    list-style: none;
+    width: 100%;
+    height: 15%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin6{
+    background-color: #f1f9fe;
+    list-style: none;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin7{
+    background-color: #EBC200;
+    list-style: none;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#plastin8{
+    background-color: #A592C5;
+    list-style: none;
+    width: 100%;
+    height: 10%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#phfromainmenu{
+    position: absolute;
+    width: 18%;
+    top: 65%;
+    right: 40%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#cmfrommainmenu{
+    position: absolute;
+    width: 16%;
+    top: 70%;
+    right: 12%;
+    border-radius: 30px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#goodformainmenu{
+    position: absolute;
+    width: 10%;
+    top: 64%;
+    right: 75%;
+    border-radius: 30px;
+}
+#foriconforFB{
+    position: absolute;
+    width: 10%;
+    top: 72%;
+    right: 67%;
+    border-radius: 30px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#foriconforPyshkin{
+    position: absolute;
+    width: 9%;
+    top: 60%;
+    right: 5%;
+    border-radius: 30px;
+    box-shadow: 0px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#foricontictac{
+    position: absolute;
+    width: 7%;
+    top: 92%;
+    right:45%;
+    border-radius: 15px;
+    box-shadow: 12px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}

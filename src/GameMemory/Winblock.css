@@ -1,0 +1,14 @@
+#textforwinblock{
+    position: absolute;
+    top: 1200px;
+    font-size: 80px;
+    font-family: "PT Sans";
+    left: 300px;
+    color: #fffffe;
+    font-weight: bold;
+}
+#photoforwinblock{
+    position: relative;
+    width: 20%;
+    left: 60px;
+}

@@ -87,6 +87,7 @@ function Timetable() {
     const onKeyPress = button => {
         console.log("Button pressed", button);
         if (button === "{lock}") handleShift();
+        if (button === "{esc}") setKeyboardOpne(false);
     };
     return (
         <>
@@ -158,28 +159,40 @@ function Timetable() {
                  onChange={onChange}
                  onKeyPress={onKeyPress}
                  layoutName ={Layout}
+                 theme={"hg-theme-default hg-layout-default myTheme"}
                  layout={{
                      default: [
-                         "` 1 2 3 4 5 6 7 8 9 0 - =",
-                         "й ц у к е н г ш щ з х ъ \\",
-                         "ф ы в а п р о л д ж э ; ' {enter}",
-                         "{shift} я ч с м и т ь б ю {shift}",
-                         "{space} {bksp} {lock}"
+                         "1 2 3 4 5 6 ",
+                         "й ц у к е н",
+                         "г ш щ з х ъ",
+                         "ф ы в а п р",
+                         "о л д ж э я",
+                         "я ч с м н и",
+                         "т ь б ю {enter}",
+                         "{lock} {space} {bksp} {esc}",
+
                      ],
                      shift: [
                          "` 1 2 3 4 5 6 7 8 9 0 - =",
                          "Й Ц У К Е Н Г Ш Щ З Х Ъ \\",
                          "Ф Ы В А А П О Л Д Ж Э ; ' {enter}",
                          "{shift} Я Ч С М И Т Ь Б Ю {shift}",
-                         "{space} {bksp} {lock}"
+                         "{space} {bksp} {lock} {esc}"
                      ]
                  }}
+                 buttonTheme={[
+                     {
+                        class:"hg-red",
+                         buttons:"A a"
+                     }
+                 ]}
                  display={{
                      "{space}": "Пробел",
                      "{bksp}": "Удалить символ",
                      "{enter}": "Enter",
                      "{shift}":"Shift",
-                     "{lock}": "Смена Регистра"
+                     "{lock}": "Смена Регистра",
+                     "{esc}": "Убрать клавиатуру"
                  }}
              />: null}
          </div>
