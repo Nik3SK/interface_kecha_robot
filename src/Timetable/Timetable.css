@@ -39,7 +39,7 @@
 }
 #formforinput{
     position: relative;
-    top: 630px;
+    top: 550px;
     right: -600px;
     width: 300px;
     height: 300px;
@@ -56,9 +56,9 @@
 }
 #autocomplete{
     position: absolute;
-    left: 0px;
-    top: 60px;
-    width: 100%;
+    left: 0;
+    top: 43%;
+    width: 94%;
     font-size: 34px;
     background: white;
     list-style: none;
@@ -116,4 +116,24 @@
 }
 .simple-keyboard {
 
+}
+#BackforTimeTable{
+    position: absolute;
+    top: 86%;
+    width: 20%;
+    height: 11%;
+    left: 5%;
+    background-color: #EBC200;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#linkbackTimeTable{
+    position: absolute;
+    font-size: 55px;
+    text-decoration:none;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+    top: 10%;
+    left: 3%;
 }

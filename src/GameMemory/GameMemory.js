@@ -3,6 +3,7 @@ import React from "react";
 import photoforGM1 from "./imagesforGM/free-icon-card-game-3364995.png"
 import Figure_7 from "../buttons/Figures/Figure_7";
 import Figure_5 from "../buttons/Figures/Figure_5";
+import {Link, Outlet} from "react-router-dom";
 function GameMemory() {
     return (
         <>
@@ -22,6 +23,10 @@ function GameMemory() {
         <div id="GameMemoryboardpos">
             <Cards/>
         </div>
+            <div id="BackforGameMemory">
+                <Link id="linkbackGameMemory" to='/Mainmenu'>В главное<br/> меню</Link>
+                <Outlet/>
+            </div>
         </>
     );
 }

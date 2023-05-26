@@ -4,6 +4,7 @@ import {Board} from "./ComponentsforTTT/Board";
 import {ResetButton} from "./ComponentsforTTT/ResetButton";
 import {ScoreBoard} from "./ComponentsforTTT/ScoreBoard";
 import './TicTacToe.css';
+import {Link, Outlet} from "react-router-dom";
 
 const TicTacToe = () => {
 
@@ -76,6 +77,10 @@ const TicTacToe = () => {
             <ScoreBoard scores={scores} xPlaying={xPlaying} />
             <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
             <ResetButton resetBoard={resetBoard} />
+            <div id="BackforXandO">
+                <Link id="linkbackXandO" to='/Mainmenu'>В главное<br/> меню</Link>
+                <Outlet/>
+            </div>
         </div>
     );
 }

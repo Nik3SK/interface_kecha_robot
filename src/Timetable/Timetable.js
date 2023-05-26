@@ -15,6 +15,7 @@ import Gradient1 from "../buttons/Gradientscircle/Gradient1violet";
 import Keyboard from 'react-simple-keyboard';
 import 'react-simple-keyboard/build/css/index.css';
 import {keyboard} from "@testing-library/user-event/dist/keyboard";
+import {Link, Outlet} from "react-router-dom";
 // import {json} from "react-router";
 
 function Timetable() {
@@ -27,10 +28,7 @@ function Timetable() {
     const [Layout, setLayout] = useState("default");
     const keyboard = useRef();
     function Getfio(e) {
-        setInputs(e.target.value)
-        const input =e.target.value;
-        keyboard.current.setInput(input)
-        e.preventDefault();
+
         setFio(e.target.value)
         const ws = new WebSocket('ws://localhost:8000');
         ws.onopen = () => {
@@ -56,36 +54,37 @@ function Timetable() {
         };
     }
     function Gettt(e) {
-        setFioforTime(e.target.textContent)
+        setFioforTime(e.target.innerText)
         const ws = new WebSocket('ws://localhost:8000');
-        ws.onopen = () => {
-            ws.send(FioforTime)
-            console.log(FioforTime)
+        if (FioforTime!='') {
+            ws.onopen = () => {
+                ws.send(FioforTime)
+                console.log(FioforTime)
 
-        };
-        ws.onmessage = (event) => {
-            const response = event.data
-            setTimeTable(response.split(','))
+            };
+            ws.onmessage = (event) => {
+                const response = event.data
+                setTimeTable(response.split(','))
 
-        };
+            };
 
-        ws.onclose = () => {
+            ws.onclose = () => {
 
-        };
+            };
+        }
     }
     function  calltokeyboard() {
         setKeyboardOpne(true)
     }
     const onChange = input => {
         setInputs(input);
-        console.log("Input changed", input);
+
     };
     const handleShift = () => {
         const newLayoutName = Layout === "default" ? "shift" : "default";
         setLayout(newLayoutName);
     };
     const onKeyPress = button => {
-        console.log("Button pressed", button);
         if (button === "{lock}") handleShift();
         if (button === "{esc}") setKeyboardOpne(false);
     };
@@ -101,8 +100,8 @@ function Timetable() {
             <Land4  fill="#A592C5" transform="translate(-250 -500)"/>
             <form id="formforinput" >
 
-                <input id="inputtimetable" placeholder="напиши тут свое имя! "  onChange={Getfio} onClick={calltokeyboard}
-                value={Inputs}
+                <input id="inputtimetable" placeholder="напиши тут свое имя! "  onChange={Getfio}
+
                 />
                 <ul id="autocomplete">
                     {
@@ -196,6 +195,10 @@ function Timetable() {
                  }}
              />: null}
          </div>
+            <div id="BackforTimeTable">
+                <Link id="linkbackTimeTable" to='/Mainmenu'>В главное<br/> меню</Link>
+                <Outlet/>
+            </div>
         </>
     );
 

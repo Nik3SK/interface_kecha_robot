@@ -11,3 +11,23 @@
     color: #fffffe;
     font-weight: bold;
 }
+#BackforFlappy{
+    position: absolute;
+    top: 85%;
+    width: 20%;
+    height: 8%;
+    left: 5%;
+    background-color: forestgreen;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#linkbackFlappy{
+    position: absolute;
+    font-size: 55px;
+    text-decoration:none;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+    top: 0%;
+    left: 3%;
+}

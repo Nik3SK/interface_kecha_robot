@@ -60,12 +60,14 @@ class Mainmenu extends React.Component {
                 <ul id="plastinsmenu">
                     <li id="plastin1"></li>
                     <li id="plastin2"></li>
-                    <li id="plastin3">СКОЛЬКО МОСКВА</li>
+                    <li id="plastin3">(^.^)/</li>
                     <li id="plastin4"></li>
                     <li id="plastin5"></li>
                     <li id="plastin6"></li>
                     <li id="plastin7"></li>
-                    <li id="plastin8">ВЫШКА</li>
+                    <li id="plastin8">
+                        ~(˘▾˘~)
+                    </li>
                 </ul>
                 <img src={phshcedule1} id="phfromainmenu" />
                 <img src={CMshcedule2} id="cmfrommainmenu"/>
@@ -108,15 +110,23 @@ class Mainmenu extends React.Component {
                             <Route path='student' element={<Component1/>}></Route>
                             <Route path='visiter' element={<Mainmenu/>}></Route>
                         </Route>
-                        <Route path='/timetable' element={<Timetable/>}/>
-                        <Route path='/Pushkin' element={<Pushkin/>}/>
+                        <Route path='/timetable' element={<Timetable/>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
+                        <Route path='/Pushkin' element={<Pushkin/>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
                         <Route path='/moscow' element={<Moscow/>}/>
                         <Route path='/registration' element={<Registration/>}/>
-                        <Route path='/gameMemory' element={<React.StrictMode><GameMemory/> </React.StrictMode>}/>
-                        <Route path='/gameFB' element={<React.StrictMode>
-                            <FlappyBird/></React.StrictMode>}/>
-                        <Route path='/gameXO' element={<React.StrictMode> <TicTacToe/>
-                        </React.StrictMode>}/>
+                        <Route path='/gameMemory' element={<React.StrictMode><GameMemory/> </React.StrictMode>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
+                        <Route path='/gameFB' element={<React.StrictMode><FlappyBird/></React.StrictMode>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
+                        <Route path='/gameXO' element={<React.StrictMode> <TicTacToe/></React.StrictMode>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
                     </Routes>
 
             </>

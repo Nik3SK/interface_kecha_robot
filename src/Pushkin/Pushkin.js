@@ -12,8 +12,19 @@ import photo8 from "./goldfish.png"
 import Figure_7 from "../buttons/Figures/Figure_7";
 import Figure_6 from "../buttons/Figures/Figure_6";
 import Figure_1 from "../buttons/Figures/Figure_1";
+import Land3 from "../buttons/Figures/Figure_5";
 import Logo from "../buttons/Logos/LogoVar_1";
 import Gradient2yellow from "../buttons/Gradientscircle/Gradient2yellow";
+
+import {
+    BrowserRouter,
+    Outlet,
+    Routes,
+    Route,
+    Link,
+} from 'react-router-dom';
+import Figure_5 from "../buttons/Figures/Figure_5";
+
 class Pushkin extends React.Component{
 
     render()
@@ -21,14 +32,15 @@ class Pushkin extends React.Component{
         return(
             <>
                 <svg id="fonforPushkin">
-                    <Figure_7 fill="white" transform='translate(100 200)'/>
+                    <Figure_7 fill="white" transform='translate(80 210)'/>
                     <Figure_6 fill="#EBC200" transform='translate(-340 200)'/>
                     <Figure_6 fill="#EBC200" transform='translate(-120 550)'/>
                     <Figure_6 fill="#EBC200" transform='translate(70 900)'/>
-                    <Logo fill="green" transform='translate(40 1700)'/>
+
                     <Figure_1 fill="#f1f9fe" transform='translate(50 -180)'/>
                     <Figure_1 fill="white" transform='translate(770 -90)'/>
                     <Gradient2yellow transform='translate(450 -230)'/>
+
                 </svg>
                 <svg id="Pyshkintext1">
                     <text x="100" y="70" fontSize="39" fontFamily="PT Sans" fontWeight="bold" fill="skyblue">
@@ -89,6 +101,10 @@ class Pushkin extends React.Component{
                         Салтане
                     </text>
                 </svg>
+                <div id="BackforPushkin">
+                    <Link id="linkbackPushkin" to='/Mainmenu'>В главное<br/> меню</Link>
+                    <Outlet/>
+                </div>
             </>
         )
     }

@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./FlappyBird.css"
 import Photo1forFB from './images/flappy_bird_bg.png';
 import Photo2forFB from './images/flappy_bird_pipe.png';
 import Photo3forFB from './images/flappy_bird_bird.png'
+import {Link, Outlet} from "react-router-dom";
 const BIRD_HEIGHT = 89;
 const BIRD_WIDTH = 105;
 const WALL_HEIGHT = 1920;
@@ -98,6 +99,10 @@ function FlappyBird() {
             </Background>
             <span id="scores">Score: {score}</span>
         </Home>
+            <div id="BackforFlappy">
+                <Link id="linkbackFlappy" to='/Mainmenu'>В главное<br/> меню</Link>
+                <Outlet/>
+            </div>
         </>
     );
 }
