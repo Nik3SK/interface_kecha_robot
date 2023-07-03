@@ -1,0 +1,51 @@
+.app {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgb(203, 238, 226);
+    position: absolute;
+}
+
+.game {
+    width: 640px;
+    height: 640px;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px #888888;
+    min-width: 640px;
+    min-height: 640px;
+   position: absolute;
+}
+
+.game img{
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 8px #888888;
+
+}
+#BackforCandy{
+    position: absolute;
+    top: 85%;
+    width: 20%;
+    height: 8%;
+    left: 5%;
+    background-color: skyblue;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#linkbackCandy{
+    position: absolute;
+    font-size: 55px;
+    text-decoration:none;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color: white;
+    top: 0%;
+    left: 3%;
+}

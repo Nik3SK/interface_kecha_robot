@@ -16,6 +16,10 @@ import Keyboard from 'react-simple-keyboard';
 import 'react-simple-keyboard/build/css/index.css';
 import {keyboard} from "@testing-library/user-event/dist/keyboard";
 import {Link, Outlet} from "react-router-dom";
+import phtictacvar1 from "../Mainmenu/ImagesForMainmenu/icontictacvar1.png";
+
+import nowifi from "./imagesforTimetable/free-icon-no-internet-4652357.png"
+import XandO from "../Games/XandO";
 // import {json} from "react-router";
 
 function Timetable() {
@@ -126,7 +130,8 @@ function Timetable() {
                 <text x="-20" y="135" fontSize="103" fontFamily="PT Sans" fontWeight="bold" fill="white">ッ</text>
                 <text x="40" y="225" fontSize="53" fontFamily="PT Sans" fontWeight="bold" fill="white">Погода:</text>
             </svg>
-            <img id="depictweather" src = {(`https://openweathermap.org/img/w/`+TimeTable[11]+`.png`).replace(/\s+/g, '')} title="weather" alt="no" />
+
+            {/*<img id="depictweather" onerror='this.style.display = "none"' src = {(`https://openweathermap.org/img/w/`+TimeTable[11]+`.png`).replace(/\s+/g, '')} title="weather" alt="" />*/}
             <svg id="text3Timetable">
                 <text x="50" y="100" fontSize="43" fontFamily="PT Sans" fontWeight="bold" fill="white">(＠＾－＾)</text>
             </svg>
@@ -195,6 +200,11 @@ function Timetable() {
                  }}
              />: null}
          </div>
+            <img src={nowifi} id="fornowifi"/>
+            <svg id="text4Timetable">
+                <text x="50" y="90" fontSize="60" fontFamily="PT Sans" fontWeight="bold" fill="#2c3370">Извини, это работает </text>
+                <text x="50" y="158" fontSize="60" fontFamily="PT Sans" fontWeight="bold" fill="#2c3370">только в сети НИУ ВШЭ</text>
+            </svg>
             <div id="BackforTimeTable">
                 <Link id="linkbackTimeTable" to='/Mainmenu'>В главное<br/> меню</Link>
                 <Outlet/>

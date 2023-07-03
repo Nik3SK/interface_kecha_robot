@@ -104,6 +104,17 @@
     font-weight: bold;
     color:white;
 }
+#link10mainmenu{
+    position: absolute;
+    left:74px;
+    top:1700px;
+    font-size: 58px;
+    text-decoration:none;
+    width: 300px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    color:white;
+}
 #text1Mainmenu{
     position: absolute;
     top: 670px;

@@ -5,14 +5,22 @@ import Photo1forFB from './images/flappy_bird_bg.png';
 import Photo2forFB from './images/flappy_bird_pipe.png';
 import Photo3forFB from './images/flappy_bird_bird.png'
 import {Link, Outlet} from "react-router-dom";
+// const BIRD_HEIGHT = 28;
+// const BIRD_WIDTH = 33;
+// const WALL_HEIGHT = 1920;
+// const WALL_WIDTH = 1080;
+// const GRAVITY = 4;
+// const OBJ_WIDTH = 52;
+// const OBJ_SPEED = 9;
+// const OBJ_GAP = 200;
 const BIRD_HEIGHT = 89;
 const BIRD_WIDTH = 105;
 const WALL_HEIGHT = 1920;
 const WALL_WIDTH = 1080;
-const GRAVITY = 18;
+const GRAVITY = 8;
 const OBJ_WIDTH = 150;
-const OBJ_SPEED = 15;
-const OBJ_GAP = 600;
+const OBJ_SPEED = 24;
+const OBJ_GAP = 900;
 
 function FlappyBird() {
     const [isStart, setIsStart] = useState(false);

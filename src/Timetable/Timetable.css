@@ -137,3 +137,21 @@
     top: 10%;
     left: 3%;
 }
+#fornowifi{
+    position: absolute;
+    width: 35%;
+    top: 45%;
+    right:33%;
+    border-radius: 15px;
+}
+#text4Timetable{
+    position: absolute;
+    width: 670px;
+    top: 1300px;
+    right:200px;
+    height: 200px;
+    background-color: #fffffe;
+    border-radius: 15px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+    color: #2c3370;
+}
