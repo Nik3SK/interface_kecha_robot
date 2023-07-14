@@ -33,7 +33,7 @@ import phtictacvar1 from "./ImagesForMainmenu/icontictacvar1.png"
 import phtictacvar2 from "./ImagesForMainmenu/icontictacvar2.png"
 import phtictacvar3 from "./ImagesForMainmenu/icontictacvar3.png"
 import phtictacvar4 from "./ImagesForMainmenu/icontictacvar4.png"
-
+import phtalks from "./ImagesForMainmenu/conversation.png"
 
 import App from "../CandyCrush/App";
 
@@ -63,7 +63,7 @@ class Mainmenu extends React.Component {
                 <ul id="plastinsmenu">
                     <li id="plastin1"></li>
                     <li id="plastin2"></li>
-                    <li id="plastin3">(o˘◡˘o)</li>
+                    <li id="plastin3"></li>
                     <li id="plastin4"></li>
                     <li id="plastin5"></li>
                     <li id="plastin6"></li>
@@ -78,6 +78,7 @@ class Mainmenu extends React.Component {
                 <img src={iconforFB} id="foriconforFB"/>
                 <img src={iconforPyshkin} id="foriconforPyshkin"/>
                 <img src={phtictacvar1} id="foricontictac"/>
+                <img src={phtalks} id="foricontalks"/>
 
                 <Land3 fill="#A592C5" transform="translate(10 -20)"/>
                 <Land4 fill="#EBC200" transform="translate(70 -180)"/>
@@ -91,7 +92,7 @@ class Mainmenu extends React.Component {
                     <text x="410" y="160" fontSize="70" fontFamily="PT Sans" fontWeight="bold" fill="white">ツ</text>
                 </svg>
 
-                <div onClick={this.clickforwake} id="forhello">
+                <div  id="forhello"></div>
                     <Link id="link1mainmenu" to='/Whoareyou' >Кто я такой?</Link>
 
                     {/*<Link id="link2mainmenu"  to='/HSE'>Хочешь в Вышкy?</Link>*/}
@@ -100,7 +101,7 @@ class Mainmenu extends React.Component {
 
                     <Link id="link4mainmenu" to='/Pushkin' >Кто такой Пушкин?</Link>
 
-                    {/*<Link id="link5mainmenu" to='/moscow' >Сколько лет Москве?</Link>*/}
+                    <Link id="link5mainmenu" to='/talks' >Поболтаем?</Link>
 
                     <Link id="link7mainmenu" to='/gameMemory' >Сыграем в <br/>"Найди пару"</Link>
 
@@ -109,7 +110,7 @@ class Mainmenu extends React.Component {
                     <Link id="link9mainmenu" to='/gameXO' >Давай <br/> в</Link>
 
                     {/*<Link id ="link10mainmenu" to='/gameCC'> Сыграем в <br/> Candy Crash</Link>*/}
-                {this.state.Onetouch==="Sleep" ? <Hello/>: null}</div>
+
 
 
                     <Routes>
@@ -139,6 +140,9 @@ class Mainmenu extends React.Component {
                             <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
                         </Route>
                         <Route path='/gameXO' element={<React.StrictMode> <TicTacToe/></React.StrictMode>}>
+                            <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
+                        </Route>
+                        <Route path='/talks' element={<React.StrictMode> <Hello/></React.StrictMode>}>
                             <Route path='Mainmenu' element={<Mainmenu/>} ></Route>
                         </Route>
                     </Routes>

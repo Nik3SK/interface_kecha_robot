@@ -119,3 +119,17 @@
     top: 0%;
     left: 3%;
 }
+#inputforPushkin{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    border: solid;
+    border-color: #AA90C4;
+    border-width: 15px;
+    border-radius: 30px;
+    top: 1700px;
+    left:40px;
+}

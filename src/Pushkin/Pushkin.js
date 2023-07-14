@@ -24,9 +24,26 @@ import {
     Link,
 } from 'react-router-dom';
 import Figure_5 from "../buttons/Figures/Figure_5";
+import Hello from "../Hello/Hello";
 
 class Pushkin extends React.Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            Turn:"No"
+        }
 
+        this.getdream=this.getdream.bind(this)
+    }
+
+    getdream(event){
+        if (event.key=='Enter') {
+            console.log("Hay")
+        }
+        if(event.target.value=="Обратно"){
+            this.setState({Turn:"Yes"})
+        }
+    }
     render()
     {
         return(
@@ -102,9 +119,9 @@ class Pushkin extends React.Component{
                     </text>
                 </svg>
                 <div id="BackforPushkin">
-                    <Link id="linkbackPushkin" to='/Mainmenu'>В главное<br/> меню</Link>
-                    <Outlet/>
-                </div>
+                <Link id="linkbackPushkin" to='/Mainmenu'>В главное<br/> меню</Link>
+                <Outlet/>
+            </div>
             </>
         )
     }

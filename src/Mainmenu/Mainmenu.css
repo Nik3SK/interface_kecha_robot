@@ -51,14 +51,15 @@
 }
 #link5mainmenu{
     position: absolute;
-    left:720px;
-    top:1485px;
-    font-size: 35px;
+    left:100px;
+    top:1635px;
+    font-size: 55px;
     text-decoration:none;
     width: 300px;
     font-family: "PT Sans";
     font-weight: bold;
     color: white;
+    height: 500px;
 }
 #link6mainmenu{
     position: absolute;
@@ -267,6 +268,14 @@
     width: 18%;
     top: 65%;
     right: 40%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#foricontalks{
+    position: absolute;
+    width: 13%;
+    top: 89%;
+    right: 75%;
     border-radius: 30px;
     box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.5);
 }

@@ -9,8 +9,42 @@
 }
 #text1forHello{
     position: absolute;
-    top: 350px;
+    top: 300px;
     left: 550px;
     width: 420px;
-    height: 400px;
+    height: 450px;
+}
+#inputHello{
+    position: absolute;
+    height: 100px;
+    width: 1000px;
+    font-size: 50px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    border: solid;
+    border-color: #AA90C4;
+    border-width: 15px;
+    border-radius: 30px;
+    top: 1700px;
+    right:40px;
+}
+#inputHello::placeholder{
+    font-size: 34px;
+    color: #AA90C4;
+    font-family: "PT Sans";
+    font-weight: bold;
+}
+.formessages{
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    top: 1300px;
+    left: 100px;
+}
+.foranswers{
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    top: 1500px;
+    left: 150px;
 }
